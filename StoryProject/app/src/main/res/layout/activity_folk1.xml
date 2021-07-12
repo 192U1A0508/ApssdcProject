@@ -6,11 +6,39 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FolkActivity1">
+
+
     <TextView
+        android:id="@+id/sun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sahith is a good boy"
-        android:textSize="30dp"/>
+        android:textSize="40dp"
+        android:textColor="#047AD7"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:text="@string/sun" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/suncontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/black"
+            android:text="@string/suncontent"
+            android:textSize="25dp" />
+
+
+
+
+    </ScrollView>
+
 
 
 </LinearLayout>

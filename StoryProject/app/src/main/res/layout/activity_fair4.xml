@@ -5,11 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomeActivity3">
+    tools:context=".FairActivity4">
+
+
     <TextView
+        android:id="@+id/bambi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Janu is a good girl"
-        android:textSize="30dp"/>
+        android:textSize="40dp"
+        android:textColor="#047AD7"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:text="@string/bambi"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/bambicontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/black"
+            android:text="@string/bambicontent"
+            android:textSize="25dp" />
+
+
+
+
+    </ScrollView>
+
+
+
+
+
 
 </LinearLayout>

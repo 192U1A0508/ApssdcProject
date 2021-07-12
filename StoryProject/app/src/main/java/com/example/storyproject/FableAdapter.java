@@ -92,10 +92,6 @@ public class FableAdapter extends RecyclerView.Adapter<FableAdapter.MyViewHolder
                     Intent intent4=new Intent(context,HomeActivity5.class);
                     context.startActivity(intent4);
                     break;
-                case 5:
-                    Intent intent5=new Intent(context,HomeActivity6.class);
-                    context.startActivity(intent5);
-                    break;
 
                     }
 

@@ -4,11 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomeActivity5">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="how is it"
-        android:textSize="30dp"/>
+        android:textSize="40dp"
+        android:textColor="#047E73"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:id="@+id/wealth"
+        android:text="@string/wealth"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:id="@+id/wealthcontent"
+        android:text="@string/wealthcontent"/>
+    </ScrollView>
 
 </LinearLayout>
