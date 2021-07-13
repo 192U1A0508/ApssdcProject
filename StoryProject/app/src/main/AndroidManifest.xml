@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StoryProject">
+        <activity android:name=".SecondActivity"></activity>
         <activity android:name=".FairActivity5" />
         <activity android:name=".FairActivity4" />
         <activity android:name=".FairActivity3" />
