@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        android:textColor="#047E73"
+        android:textColor="#00B8D4"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:paddingTop="25dp"

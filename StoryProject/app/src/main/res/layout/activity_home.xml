@@ -12,12 +12,36 @@
         android:id="@+id/Heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:textColor="#047AD7"
+        android:layout_marginBottom="15dp"
+        android:textSize="30dp"
+        android:textColor="#0091EA"
         android:fontFamily="sans-serif"
-        android:gravity="center"
+        android:gravity="left"
         android:paddingTop="25dp"
+        android:paddingLeft="0dp"
         android:text="@string/Heading" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="click"
+        android:id="@+id/play"
+        android:onClick="playPause"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="#0091EA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -39,6 +63,11 @@
 
     </ScrollView>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
 
 </LinearLayout>
