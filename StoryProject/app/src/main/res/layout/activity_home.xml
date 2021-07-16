@@ -13,34 +13,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:textSize="30dp"
-        android:textColor="#0091EA"
         android:fontFamily="sans-serif"
-        android:gravity="left"
-        android:paddingTop="25dp"
+        android:gravity="center"
         android:paddingLeft="0dp"
-        android:text="@string/Heading" />
+        android:paddingTop="25dp"
+        android:text="@string/Heading"
+        android:textColor="#0091EA"
+        android:textSize="30sp" />
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ToggleButton
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="click"
+    <Button
         android:id="@+id/play"
-        android:onClick="playPause"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:background="#0091EA" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5FF6D00"
+        android:text="@string/play"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D9FF6D00"
+        android:text="@string/stop"
+        android:onClick="stop"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
     <ScrollView
@@ -64,7 +76,19 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
