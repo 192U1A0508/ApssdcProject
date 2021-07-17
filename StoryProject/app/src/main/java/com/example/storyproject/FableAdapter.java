@@ -1,18 +1,13 @@
 package com.example.storyproject;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -21,15 +16,12 @@ public class FableAdapter extends RecyclerView.Adapter<FableAdapter.MyViewHolder
     Context context;
     ArrayList arrayList, arrayListname;
 
-
     public FableAdapter(Context context, ArrayList arrayList, ArrayList arrayListname) {
         this.context = context;
         this.arrayList = arrayList;
         this.arrayListname = arrayListname;
 
     }
-
-
     @Override
     public FableAdapter.MyViewHolder onCreateViewHolder (@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.storyrow, parent, false);
@@ -37,8 +29,6 @@ public class FableAdapter extends RecyclerView.Adapter<FableAdapter.MyViewHolder
 
         return holder;
     }
-
-
     @Override
     public void onBindViewHolder(@NonNull FableAdapter.MyViewHolder holder, int position) {
         holder.iv.setImageResource(Data.images[position]);
@@ -46,9 +36,6 @@ public class FableAdapter extends RecyclerView.Adapter<FableAdapter.MyViewHolder
 
 
     }
-
-
-
     @Override
     public int getItemCount() {
         return arrayListname.size();
@@ -93,17 +80,9 @@ public class FableAdapter extends RecyclerView.Adapter<FableAdapter.MyViewHolder
                     context.startActivity(intent4);
                     break;
 
-                    }
-
-
             }
-
-
-
-
-
-
         }
     }
+}
 
 

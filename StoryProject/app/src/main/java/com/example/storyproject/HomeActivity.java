@@ -1,23 +1,17 @@
 package com.example.storyproject;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import android.media.MediaPlayer;
-import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ScrollView;
+
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ToggleButton;
 
 import java.util.Locale;
 
-import static android.view.View.IMPORTANT_FOR_ACCESSIBILITY_NO;
+
 
 public class HomeActivity extends AppCompatActivity {
     Button playPause,stop;
@@ -35,13 +29,9 @@ public class HomeActivity extends AppCompatActivity {
         t1 = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
-
-
                 if (status != TextToSpeech.ERROR) {
                     t1.setLanguage(Locale.ENGLISH);
                 }
-
-
             }
 
         });

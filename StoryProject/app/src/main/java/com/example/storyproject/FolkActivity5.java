@@ -27,15 +27,9 @@ public class FolkActivity5 extends AppCompatActivity {
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
-
-
                 if (status!=TextToSpeech.ERROR){
                     t1.setLanguage(Locale.ENGLISH);
                 }
-
-
-
-
             }
 
         });
@@ -65,8 +59,5 @@ public class FolkActivity5 extends AppCompatActivity {
             t1.stop();
             Toast.makeText(FolkActivity5.this, "Stopped...", Toast.LENGTH_SHORT).show();
         }
-
-
-
     }
 }

@@ -15,9 +15,6 @@ public class FairActivity1 extends AppCompatActivity {
     Button playPause,stop;
     TextView cnt;
     TextToSpeech t1;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,17 +25,10 @@ public class FairActivity1 extends AppCompatActivity {
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
-
-
                 if (status!=TextToSpeech.ERROR){
                     t1.setLanguage(Locale.ENGLISH);
                 }
-
-
-
-
             }
-
         });
         playPause.setOnClickListener(new View.OnClickListener() {
             @Override
